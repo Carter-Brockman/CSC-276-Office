@@ -24,7 +24,7 @@ public class SeasonalEmployee extends PartTimeEmployee{
     @Override
     protected void displayInfo()
     {
-        System.out.printf("%s (%s)\n\tHourly Wage: $%.2f\n\tHours Worked: %d\n\tWeekly Paycheck: %.2f\n", name, employeeCategory, hourlyWage, hoursWorked, weeklyPaycheck);
+        System.out.printf("%s (%s)\n\tHourly Wage: $%.2f\n\tHours Worked: %d\n\tWeekly Paycheck: $%.2f\n", name, employeeCategory, hourlyWage, hoursWorked, weeklyPaycheck);
     }
 
 }//End of SeasonalEmployee
