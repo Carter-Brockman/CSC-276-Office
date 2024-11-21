@@ -9,7 +9,7 @@ public class SeasonalEmployee extends PartTimeEmployee{
     public SeasonalEmployee(String name, String SSN, double hourlyWage, int hoursWorked, String season, double seasonalBonus)
     {
         super(name, SSN, hourlyWage, hoursWorked);
-        this.employeeCategory = "Seasonal Employee - " + season;
+        this.employeeCategory = "Seasonal Employee - " + season; //Cannot use super to change name, so it is done here
         this.season = season;
         this.seasonalBonus = seasonalBonus;
         this.weeklyPaycheck = (hourlyWage * hoursWorked) + seasonalBonus; //seasonalBonus only applies to seasonal (part-time) workers
@@ -18,7 +18,7 @@ public class SeasonalEmployee extends PartTimeEmployee{
     @Override
     protected double calculatePay()
     {
-        return (weeklyPaycheck);
+        return (weeklyPaycheck); //Math is done in constructor for simplicity, this functions as a getter
     }
 
     @Override

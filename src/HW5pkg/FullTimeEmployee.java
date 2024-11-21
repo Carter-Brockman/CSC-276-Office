@@ -15,7 +15,7 @@ public class FullTimeEmployee extends Employee{
     @Override
     protected double calculatePay()
     {
-        return (monthlySalary);
+        return (monthlySalary); //Math is done in constructor for simplicity, this functions as a getter
     }
 
     @Override

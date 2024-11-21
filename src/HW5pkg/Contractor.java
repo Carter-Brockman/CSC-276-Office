@@ -15,7 +15,7 @@ public class Contractor extends Employee{
     @Override
     protected double calculatePay()
     {
-        return (weeklyRate);
+        return (weeklyRate); //Math is done in constructor for simplicity, this functions as a getter
     }
 
     @Override

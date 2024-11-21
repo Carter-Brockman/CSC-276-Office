@@ -2,6 +2,7 @@ package HW5pkg;
 
 public class PartTimeEmployee extends Employee{
 
+    //Data must be available to subclass(es), so protected/public (protected better)
     protected double hourlyWage;
     protected int hoursWorked;
     protected double weeklyPaycheck;
@@ -17,7 +18,7 @@ public class PartTimeEmployee extends Employee{
     @Override
     protected double calculatePay()
     {
-        return (weeklyPaycheck); //Math is done in constructor for simplicity
+        return (weeklyPaycheck); //Math is done in constructor for simplicity, this functions as a getter
     }
 
     @Override

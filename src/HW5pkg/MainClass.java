@@ -6,7 +6,7 @@ public class MainClass {
 
     public static void main(String[] args) {
 
-        ArrayList<Employee> employees = new ArrayList<>();
+        ArrayList<Employee> employees = new ArrayList<>(); //Store an arraylist of Employee subclass objects
 
         //Reference for how the data is structured without an ArrayList
         /*
@@ -16,7 +16,7 @@ public class MainClass {
         Employee Con1 = new Contractor("Bob Builder", "694-91-3761","Studio Apartment", 925.75);
          */
 
-        //Adding Employees tp arraylist, could be done
+        //Adding Employees to arraylist, could be done with normal array or manually
         employees.add(new FullTimeEmployee("Bob Adams", "123-32-231", 3200.00, 150));
         employees.add(new PartTimeEmployee("Jon Arbuckle", "216-14-4897",19.35,32));
         employees.add(new SeasonalEmployee("Sally Smith", "843-69-2360",17.85, 35, "Winter", 800));
